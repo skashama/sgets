@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap-container {
+  flex: 1 0 auto;
+}
+
+/* .content {
+    height: 524px;
+} */
+
+.homeslide {
+  div {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  // background-color: "gray";
+  background-color: #192c3d;
+  height: 100px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    /* height: 60px;
+     line-height: 60px;
+} */
+
+.banner {
+  width: 300px;
+  width: 100%;
+  height: 100px;
+  background-color: #192c3d;
+  color: #fff;
+}
+
+.top-bar {
+  background-color: #192c3d;
+  display: flex;
+  height: 45px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.secondParg {
+  margin-bottom: auto;
+}
+
+.nav-primary {
+  width: 100%;
+}
+
