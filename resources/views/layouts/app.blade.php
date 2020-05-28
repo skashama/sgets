@@ -8,7 +8,7 @@
       <div class="content">
         <main class="main">
           <!-- From my index PAGE -->
-          @yield('content')
+            @yield('content')
         </main>
         <!-- @if (App\display_sidebar())
           <aside class="sidebar">
