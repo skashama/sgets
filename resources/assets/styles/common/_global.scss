@@ -3,6 +3,23 @@ body {
   height: 100%;
 }
 
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #192c3d;
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+}
+
+.top-bar {
+  background-color: #eb6e01;
+  display: flex;
+  height: 45px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,10 +28,6 @@ body {
 .wrap-container {
   flex: 1 0 auto;
 }
-
-/* .content {
-    height: 524px;
-} */
 
 .homeslide {
   div {
@@ -32,35 +45,16 @@ footer {
   flex-shrink: 0;
 }
 
-/* .footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    /* height: 60px;
-     line-height: 60px;
-} */
-
-.banner {
-  width: 300px;
-  width: 100%;
-  height: 100px;
-  background-color: #192c3d;
-  color: #fff;
-}
-
-.top-bar {
-  background-color: #192c3d;
-  display: flex;
-  height: 45px;
-  padding-right: 45px;
-  padding-left: 45px;
-}
-
 .secondParg {
   margin-bottom: auto;
 }
 
 .nav-primary {
+  z-index: 0;
   width: 100%;
+  height: 60px;
+  padding-right: 10%;
+  padding-left: 10%;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
-
