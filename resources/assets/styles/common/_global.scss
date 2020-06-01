@@ -20,6 +20,20 @@ header {
   padding-left: 45px;
 }
 
+.infoBox {
+  margin: 0 1.5% 0 0;
+}
+
+.nav-primary {
+  z-index: 0;
+  width: 100%;
+  height: 60px;
+  padding-right: 10%;
+  padding-left: 10%;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -37,24 +51,24 @@ body {
   }
 }
 
+.main-content {
+  padding: 2% 5%;
+}
+
+.main-content h2 {
+  text-align: center;
+}
+
 footer {
-  // background-color: "gray";
   background-color: #192c3d;
-  height: 100px;
+  height: 60px;
+  color: white;
   width: auto;
   flex-shrink: 0;
+  padding-top: 15px;
 }
 
 .secondParg {
   margin-bottom: auto;
 }
 
-.nav-primary {
-  z-index: 0;
-  width: 100%;
-  height: 60px;
-  padding-right: 10%;
-  padding-left: 10%;
-  background-color: #fff;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-}

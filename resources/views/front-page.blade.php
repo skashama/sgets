@@ -38,13 +38,14 @@
 
     <!-- var_dump(get_field('homepage_sliderone')['url'])  -->
 
+    <div class="main-content">
+      <h2><?= the_field('page_title'); ?></h2>
+      <!-- {!!the_field('page_title')  !!} -->
+      <!-- <img src="http://placehold.it/300" /> -->
 
-    <h2><?= the_field('page_title'); ?></h2>
-    <!-- {!!the_field('page_title')  !!} -->
-    <!-- <img src="http://placehold.it/300" /> -->
-
-    <p><?php the_field('textfield'); ?></p>
-    <p class="secondParg"><?php the_field('textfieldTwo'); ?></p>
+      <p><?php the_field('textfield'); ?></p>
+      <p class="secondParg"><?php the_field('textfieldTwo'); ?></p>
+    </div>
     
     <!-- Calling this function from FrontPage.php controller   -->
     <!-- {!! $get_details !!} -->

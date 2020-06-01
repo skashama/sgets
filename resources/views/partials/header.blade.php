@@ -1,5 +1,8 @@
 <header class="banner">
-  <div class="col top-bar pt-1">this is my header top</div>
+  <div class="col top-bar pt-1">
+    <div class="infoBox">this is my header top </div>
+    <div class="infoBox">this another part of header top</div>
+  </div>
   <!-- <div class="container"> -->
     <!-- <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a> -->
     <nav class="nav-primary">
