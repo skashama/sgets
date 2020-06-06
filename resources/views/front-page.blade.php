@@ -20,6 +20,7 @@
       // if( !empty( $imageOne ) && !empty( $imageTwo ) && !empty( $imageThree ) ): ?>
 
       <?php 
+         // echo $get_details();
         // $images = array(
         //   get_field('homepage_sliderone'),
         //   get_field('homepage_slidertwo'),
@@ -38,13 +39,34 @@
 
     <!-- var_dump(get_field('homepage_sliderone')['url'])  -->
 
-    <div class="main-content">
-      <h2><?= the_field('page_title'); ?></h2>
-      <!-- {!!the_field('page_title')  !!} -->
-      <!-- <img src="http://placehold.it/300" /> -->
+    <div class="">
+      <div class="main-content">
+        <h2><?= the_field('page_title'); ?></h2>
+        <!-- {!!the_field('page_title')  !!} -->
+        <!-- <img src="http://placehold.it/300" /> -->
 
-      <p><?php the_field('textfield'); ?></p>
-      <p class="secondParg"><?php the_field('textfieldTwo'); ?></p>
+        <p><?php the_field('textfield'); ?></p>
+      </div>
+
+      <!-- <p class="secondParg"><?php the_field('textfieldTwo'); ?></p> -->
+      <div id="contact" class="text-center">
+        <div class="container">
+          <!-- <div class="col-md-8 col-md-offset-2 myContact-details"> -->
+            <div class="contact-title">
+              <h2><?php the_field('contact_title'); ?></h2>
+              <hr>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4"><?php the_field('contact_infouno'); ?></div>
+              <div class="col-md-4"><?php the_field('contact_infotwo'); ?></div>
+              <div class="col-md-4"><?php the_field('contact_infothree'); ?></div>
+              <div class="clearfix"></div>
+            </div>
+          <!-- </div> -->
+          
+        </div>
+      </div>
+      
     </div>
     
     <!-- Calling this function from FrontPage.php controller   -->

@@ -16,7 +16,7 @@ export default {
       // slidesToShow: 1,
       // centerMode: true,
       // variableWidth: true,
-      autoplay: false,
+      autoplay: true,
       // responsive: true
     });
     // console.log('hello there'); 

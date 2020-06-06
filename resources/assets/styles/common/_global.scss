@@ -10,18 +10,38 @@ header {
   color: #fff;
   position: fixed;
   z-index: 1;
+  top: 0;
 }
 
 .top-bar {
   background-color: #eb6e01;
   display: flex;
   height: 45px;
-  padding-right: 45px;
-  padding-left: 45px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.top-logo {
+  display: flex;
+  width: 38%;
+
+  @media (max-width: 660px) {
+    width: 100%;
+  }
+}
+
+.top-info {
+  display: inline-flex;
+  width: 38%;
+  justify-content: flex-end;
 }
 
 .infoBox {
-  margin: 0 1.5% 0 0;
+  margin: 0 3% 0 0;
+}
+
+.mid-info {
+  width: 24%;
 }
 
 .nav-primary {
@@ -72,3 +92,64 @@ footer {
   margin-bottom: auto;
 }
 
+@media (max-width: 768px) {
+  .top-info {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  // header {
+  //   position: fixed;
+  //   z-index: 1;
+  // }
+  // .top-bar,
+  .mid-info {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .top-info {
+    width: 100%;
+  }
+}
+
+#menu-main-menu li a {
+  color: black;
+}
+
+#contact {
+  padding: 100px 0 40px 0;
+  background-color: #fafafa;
+}
+
+.myContact-details {
+  flex: none;
+  max-width: -webkit-fill-available;
+  margin-left: 0;
+}
+
+.contact-title {
+  padding: 25px 0 45px 0;
+}
+
+.contact-title h2 {
+  line-height: 20px;
+  margin: 0;
+  color: #121d1f;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+hr {
+  height: 4px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #929d9d;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0;
+}
