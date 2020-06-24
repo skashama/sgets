@@ -12,7 +12,9 @@
       $imageOne = get_field('homepage_sliderone');
       $imageTwo = get_field('homepage_slidertwo');
       $imageThree = get_field('homepage_sliderthree');
-      $myText = get_field('page_title'); 
+      $myText = get_field('page_title');
+      $link = get_field('cta_link');
+      $linkTwo = get_field('cta_link_two');
 
       // debuging function : var_dump
     //  echo  var_dump($myText);  
@@ -46,6 +48,13 @@
         <!-- <img src="http://placehold.it/300" /> -->
 
         <p><?php the_field('textfield'); ?></p>
+        <div class="button-group">
+          <?php
+          if( $link ): ?>
+            <a href="<?php echo esc_url( $link ); ?>" class="btn btn-outline-info btn-lg" tabindex="-1" role="button"><?= the_field('cta_one'); ?></a>
+            <a href="<?php echo esc_url( $linkTwo ); ?>" class="btn btn-outline-secondary btn-lg" tabindex="-1" role="button"><?= the_field('cta_two'); ?></a>
+          <?php endif; ?>
+        </div>
       </div>
 
       <!-- <p class="secondParg"><?php the_field('textfieldTwo'); ?></p> -->
@@ -59,7 +68,7 @@
             <div class="row justify-content-center">
               <div class="col-md-4"><?php the_field('contact_infouno'); ?></div>
               <div class="col-md-4"><?php the_field('contact_infotwo'); ?></div>
-              <div class="col-md-4"><?php the_field('contact_infothree'); ?></div>
+              <div class="col-md-4"><?php the_field('contact_infothree'); ?></div> 
               <div class="clearfix"></div>
             </div>
           <!-- </div> -->
