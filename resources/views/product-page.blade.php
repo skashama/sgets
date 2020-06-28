@@ -10,6 +10,7 @@
 $group1 = get_field('featured_image_group1');
 $group2 = get_field('featured_image_group2');
 $group3 = get_field('featured_image_group3');
+$group4 = get_field('featured_image_group4');
 $headerImage = get_field('page_header');
 
 // if( $group1 ): ?>
@@ -28,29 +29,30 @@ $headerImage = get_field('page_header');
             <p><?php the_field('page_description') ?></p>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
+        <div class="row prod-group_one">
+            <div class="col-xs-12 col-md-6">
                 <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3>Some text</h3>
+                <h3><?= $group1['featured_image_title'] ?></h3>
                 <p><?= $group1['feature_image_description'] ?></p>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3>Some text</h3>
-                <p><?= $group1['feature_image_description'] ?></p>
+            <div class="col-xs-12 col-md-6">
+                <img src="<?php echo esc_url( $group2['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+                <h3><?= $group2['featured_image_title'] ?></h3>
+                <p><?= $group2['feature_image_description'] ?></p>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3>Some text</h3>
-                <p><?= $group1['feature_image_description'] ?></p>
-            </div>
+
         </div>
 
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3>Some text</h3>
-                <p><?= $group1['feature_image_description'] ?></p>
+        <div class="row prod-group_two">
+            <div class="col-xs-12 col-md-6">
+                <img src="<?php echo esc_url( $group3['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+                <h3><?= $group3['featured_image_title'] ?></h3>
+                <p><?= $group3['featured_image_description'] ?></p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <img src="<?php echo esc_url( $group4['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+                <h3><?= $group4['featured_image_title'] ?></h3>
+                <p><?= $group4['featured_image_description'] ?></p>
             </div>
         </div>
     </div>

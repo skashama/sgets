@@ -8,8 +8,12 @@
 
 <?php
     $group1 = get_field('featured_solution_group_1');
-    $group2 = get_field('featured_solution_group2');
-    $group3 = get_field('featured_solution_group3');
+    $group2 = get_field('featured_solution_group_2');
+    $group3 = get_field('featured_solution_group_3');
+    $group4 = get_field('featured_solution_group_4');
+    $group5 = get_field('featured_solution_group_5');
+    $group6 = get_field('featured_solution_group_6');
+    $group7 = get_field('featured_solution_group_7');
     $headerImage = get_field('page_header');
 ?>
 
@@ -25,7 +29,7 @@
             <p><?php the_field('page_description') ?></p>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2">  
+    <div class="row row-cols-1 row-cols-md-2">  
         <div class="col mb-4">
             <div class="card">
             <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
@@ -37,32 +41,65 @@
         </div>
         <div class="col mb-4">
             <div class="card">
-            <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+            <img src="<?php echo esc_url( $group2['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
-                <h5 class="card-title"><?= $group1['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group1['featured_image_description'] ?></p>
+                <h5 class="card-title"><?= $group2['featured_image_title'] ?></h5>
+                <p class="card-text"><?= $group2['featured_image_description'] ?></p>
             </div>
             </div>
         </div>
         <div class="col mb-4">
             <div class="card">
-            <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+            <img src="<?php echo esc_url( $group3['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
-                <h5 class="card-title"><?= $group1['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group1['featured_image_description'] ?></p>
+                <h5 class="card-title"><?= $group3['featured_image_title'] ?></h5>
+                <p class="card-text"><?= $group3['featured_image_description'] ?></p>
             </div>
             </div>
         </div>
         <div class="col mb-4">
             <div class="card">
-            <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+            <img src="<?php echo esc_url( $group4['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
-                <h5 class="card-title"><?= $group1['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group1['featured_image_description'] ?></p>
+                <h5 class="card-title"><?= $group4['featured_image_title'] ?></h5>
+                <p class="card-text"><?= $group4['featured_image_description'] ?></p>
+            </div>
+        </div>
+        </div>
+       </div>
+
+       <div class="row row-cols-3 row-cols-md-2">  
+        <div class="col mb-4">
+            <div class="card">
+            <img src="<?php echo esc_url( $group5['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+            <div class="card-body">
+                <h5 class="card-title"><?= $group5['featured_image_title'] ?></h5>
+                <p class="card-text"><?= $group5['featured_image_description'] ?></p>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+            <img src="<?php echo esc_url( $group6['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+            <div class="card-body">
+                <h5 class="card-title"><?= $group6['featured_image_title'] ?></h5>
+                <p class="card-text"><?= $group6['featured_image_description'] ?></p>
+            </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+            <img src="<?php echo esc_url( $group7['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+            <div class="card-body">
+                <h5 class="card-title"><?= $group7['featured_image_title'] ?></h5>
+                <p class="card-text"><?= $group7['featured_image_description'] ?></p>
             </div>
             </div>
         </div>
        </div>
+
+       
+
     </div>
 </div>
 @endsection

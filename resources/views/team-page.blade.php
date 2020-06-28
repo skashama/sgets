@@ -15,7 +15,6 @@ $headerImage = get_field('page_header');
     <img src="<?php echo esc_url( $headerImage['url'] ); ?>" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
 </div>
 
-
 <div id="product">
     <div class="container">
         <div class="page-title">

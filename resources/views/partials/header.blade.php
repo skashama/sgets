@@ -6,7 +6,7 @@
       <div class="mid-info">
       </div>
       <div class="top-info">
-        <a class="pr-3 text-white mail-link" href="mailto: shaloombowa@gmail.com">example@gmail.com<i class="fas fa-envelope pl-1"></i></a>
+        <a class="pr-3 text-white mail-link" href="mailto: jpherradura@aol.com">jpherradura@aol.com<i class="fas fa-envelope pl-1"></i></a>
       </div>
   </div>
   <!-- <div class="container"> -->

@@ -3,6 +3,44 @@ body {
   height: 100%;
 }
 
+body {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    @media (max-width: 320px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.wrap-container {
+  flex: 1 0 auto;
+}
+
+.page-header img {
+  width: 100%;
+  height: 560px;
+}
+
+.homeslide {
+  div {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.main-content {
+  padding: 2% 5%;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -52,37 +90,6 @@ header {
   padding-left: 10%;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.wrap-container {
-  flex: 1 0 auto;
-}
-
-.page-header img {
-  width: 100%;
-  height: 560px;
-}
-
-.homeslide {
-  div {
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.main-content {
-  padding: 2% 5%;
-}
-
-.main-content h2 {
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 footer {
@@ -194,6 +201,7 @@ hr {
   // letter-spacing: 0.02em;
   @media (max-width: 660px) {
     font-size: 25px;
+    margin-top: 20%;
   }
 }
 
@@ -203,8 +211,14 @@ hr {
 
 .button-group {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .team-section_block {
   padding: 16px 0;
 }
+
+.prod-group_one {
+  margin-bottom: 2rem;
+}
+
