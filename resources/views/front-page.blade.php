@@ -29,13 +29,16 @@
         //   get_field('homepage_sliderthree')
         // ); ?>
       
-      
-        <div class="homeslide">
-          <div><img src="<?php echo esc_url($imageOne['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
-          <div><img src="<?php echo esc_url($imageTwo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
-          <div><img src="<?php echo esc_url($imageThree['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+      <div class="page-header">
+        <div class="col-12 text-center p-4 homepage-banner-text">
+          <p class="justify-content-center"><?php the_field('homepage_banner_text'); ?></p>
         </div>
-
+        <div class="homeslide">
+          <div><img src="<?php echo esc_url($imageOne['url']); ?>" class="img-fluid" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+          <div><img src="<?php echo esc_url($imageTwo['url']); ?>" class="img-fluid" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+          <div><img src="<?php echo esc_url($imageThree['url']); ?>" class="img-fluid" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+        </div>
+      </div>
 
     <!-- <?//php endif; ?> -->
 

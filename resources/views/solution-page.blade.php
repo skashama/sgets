@@ -13,12 +13,11 @@
     $group4 = get_field('featured_solution_group_4');
     $group5 = get_field('featured_solution_group_5');
     $group6 = get_field('featured_solution_group_6');
-    $group7 = get_field('featured_solution_group_7');
     $headerImage = get_field('page_header');
 ?>
 
 <div class="page-header" style="width: 100%;">
-    <img src="<?php echo esc_url( $headerImage['url'] ); ?>" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
+    <img src="<?php echo esc_url( $headerImage['url'] ); ?>" class="img-fluid" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
 </div>
 
 <div id="solution">
@@ -68,7 +67,7 @@
         </div>
        </div>
 
-       <div class="row row-cols-3 row-cols-md-2">  
+       <div class="row row-cols-1 row-cols-md-2">  
         <div class="col mb-4">
             <div class="card">
             <img src="<?php echo esc_url( $group5['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
@@ -84,15 +83,6 @@
             <div class="card-body">
                 <h5 class="card-title"><?= $group6['featured_image_title'] ?></h5>
                 <p class="card-text"><?= $group6['featured_image_description'] ?></p>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-            <img src="<?php echo esc_url( $group7['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-            <div class="card-body">
-                <h5 class="card-title"><?= $group7['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group7['featured_image_description'] ?></p>
             </div>
             </div>
         </div>

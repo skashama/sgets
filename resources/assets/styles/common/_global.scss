@@ -32,6 +32,25 @@ body {
   }
 }
 
+.homepage-banner-text {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-top: 10%;
+  // letter-spacing: 0.02em;
+  @media (max-width: 660px) {
+    font-size: 25px;
+    margin-top: 20%;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 5%;
+  }
+}
+
 .main-content {
   padding: 2% 5%;
 }
@@ -47,7 +66,7 @@ header {
   background-color: #192c3d;
   color: #fff;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
 }
 
@@ -99,6 +118,32 @@ footer {
   width: auto;
   flex-shrink: 0;
   padding-top: 15px;
+}
+
+footer .container p {
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 476px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 396px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 356px) {
+    font-size: 11px;
+  }
+
+  @media (max-width: 336px) {
+    font-size: 10px;
+  }
 }
 
 .secondParg {
@@ -203,6 +248,10 @@ hr {
     font-size: 25px;
     margin-top: 20%;
   }
+
+  @media (min-width: 1200px) {
+    margin-top: 5%;
+  }
 }
 
 .contact-banner-image {
@@ -216,6 +265,12 @@ hr {
 
 .team-section_block {
   padding: 16px 0;
+}
+
+.team-member_details {
+  @media (max-width: 992px) {
+    text-align: center;
+  }
 }
 
 .prod-group_one {

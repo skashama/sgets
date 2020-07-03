@@ -16,7 +16,7 @@ $headerImage = get_field('page_header');
 // if( $group1 ): ?>
 
 <div class="page-header" style="width: 100%;">
-    <img src="<?php echo esc_url( $headerImage['url'] ); ?>" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
+    <img src="<?php echo esc_url( $headerImage['url'] ); ?>" class="img-fluid" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
 </div>
     
 <!-- <//?php echo var_dump($group1['featured_image']   ) ?> -->

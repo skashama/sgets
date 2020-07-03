@@ -16,7 +16,7 @@ $headerImage = get_field('page_header');
         <p class="justify-content-center"><?php the_field('contact_banner_text_2') ?></p>
     </div> 
     <div class="contact-banner-image"> 
-       <img src="<?php echo esc_url( $headerImage['url'] ); ?>" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
+       <img src="<?php echo esc_url( $headerImage['url'] ); ?>" class="img-fluid" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
     </div>
 </div>
 
