@@ -10,7 +10,7 @@
 $headerImage = get_field('page_header');
 ?>
 
-<div class="page-header" style="width: 100%;">
+<div class="contact-page_header" style="width: 100%;">
     <div class="col-12 text-center p-4 contact-banner-text">
         <p><?php the_field('contact_banner_text') ?></p>
         <p class="justify-content-center"><?php the_field('contact_banner_text_2') ?></p>

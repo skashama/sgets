@@ -28,9 +28,9 @@
             <p><?php the_field('page_description') ?></p>
         </div>
 
-    <div class="row row-cols-1 row-cols-md-2">  
+    <div class="row row-cols-1 row-cols-md-2 mx-auto">  
         <div class="col mb-4">
-            <div class="card">
+            <div class="card h-100">
             <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
                 <h5 class="card-title"><?= $group1['featured_image_title'] ?></h5>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="col mb-4">
-            <div class="card">
+            <div class="card h-100">
             <img src="<?php echo esc_url( $group2['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
                 <h5 class="card-title"><?= $group2['featured_image_title'] ?></h5>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="col mb-4">
-            <div class="card">
+            <div class="card h-100">
             <img src="<?php echo esc_url( $group3['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
                 <h5 class="card-title"><?= $group3['featured_image_title'] ?></h5>
@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="col mb-4">
-            <div class="card">
+            <div class="card h-100">
             <img src="<?php echo esc_url( $group4['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
                 <h5 class="card-title"><?= $group4['featured_image_title'] ?></h5>
@@ -67,9 +67,9 @@
         </div>
        </div>
 
-       <div class="row row-cols-1 row-cols-md-2">  
+       <div class="row row-cols-1 row-cols-md-2 mx-auto">  
         <div class="col mb-4">
-            <div class="card">
+            <div class="card h-100">
             <img src="<?php echo esc_url( $group5['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
                 <h5 class="card-title"><?= $group5['featured_image_title'] ?></h5>
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="col mb-4">
-            <div class="card">
+            <div class="card h-100">
             <img src="<?php echo esc_url( $group6['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
             <div class="card-body">
                 <h5 class="card-title"><?= $group6['featured_image_title'] ?></h5>
