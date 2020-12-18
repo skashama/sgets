@@ -136,94 +136,94 @@
     </div>
   </div>
 
-<div class="page-header" style="width: 100%;">
-    <img src="<?php echo esc_url( $headerImage['url'] ); ?>" class="img-fluid" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
+<div class="pages-header col-12 text-center p-4" style="width: 100%;">
+  <h3 class="mt-4"><?php the_field('page_title'); ?></h3>
 </div>
 
 <div id="solution">
     <div class="container">
-        <div class="page-title">
-            <h2><?php the_field('page_title'); ?></h2>
-            <hr>
-            <p><?php the_field('page_description') ?></p>
-        </div>
 
-    <div class="row row-cols-1 row-cols-md-2 mx-auto">  
-        <div class="col mb-4">
-            <div class="card h-100">
+    <div class="solution-list row justify-content-center mx-auto">
+      <div class="solution-item col-12 col-md-6 col-lg-4 mb-4">
+        <div class="solution-media">
+          <figure class="featured-image">
             <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-            <div class="card-body">
-                <h5 class="card-title"><?= $group1['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group1['featured_image_description'] ?></p>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupOneModal">
-                    Launch modal
-                </button>
-            </div>
-            </div>
+          </figure>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
+        <div class="solution-content">
+          <h3><?= $group1['featured_image_title'] ?></h3>
+          <p><?= $group1['featured_image_description'] ?></p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupTwoModal">Learn more</button>
+        </div>
+      </div>
+
+      <div class="solution-item col-12 col-md-6 col-lg-4 mb-4">
+        <div class="solution-media">
+          <figure class="featured-image">
             <img src="<?php echo esc_url( $group2['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-            <div class="card-body">
-                <h5 class="card-title"><?= $group2['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group2['featured_image_description'] ?></p>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupTwoModal">
-                    Description
-                </button>
-            </div>
-            </div>
+          </figure>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
+        <div class="solution-content">
+          <h3><?= $group2['featured_image_title'] ?></h3>
+          <p><?= $group2['featured_image_description'] ?></p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupTwoModal">Learn more</button>
+        </div>
+      </div>
+
+      <div class="solution-item col-12 col-md-6 col-lg-4 mb-4">
+        <div class="solution-media">
+          <figure class="featured-image">
             <img src="<?php echo esc_url( $group3['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-            <div class="card-body">
-                <h5 class="card-title"><?= $group3['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group3['featured_image_description'] ?></p>
-            </div>
-            </div>
+          </figure>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
+        <div class="solution-content">
+          <h3><?= $group3['featured_image_title'] ?></h3>
+          <p><?= $group3['featured_image_description'] ?></p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupTwoModal">Learn more</button>
+        </div>
+      </div>
+
+      <div class="solution-item col-12 col-md-6 col-lg-4 mb-4">
+        <div class="solution-media">
+          <figure class="featured-image">
             <img src="<?php echo esc_url( $group4['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-            <div class="card-body">
-                <h5 class="card-title"><?= $group4['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group4['featured_image_description'] ?></p>
-            </div>
+          </figure>
         </div>
+        <div class="solution-content">
+          <h3><?= $group4['featured_image_title'] ?></h3>
+          <p><?= $group4['featured_image_description'] ?></p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupTwoModal">Learn more</button>
         </div>
-       </div>
+      </div>
 
-       <div class="row row-cols-1 row-cols-md-2 mx-auto">  
-        <div class="col mb-4">
-            <div class="card h-100">
+      <div class="solution-item col-12 col-md-6 col-lg-4 mb-4">
+        <div class="solution-media">
+          <figure class="featured-image">
             <img src="<?php echo esc_url( $group5['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-            <div class="card-body">
-                <h5 class="card-title"><?= $group5['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group5['featured_image_description'] ?></p>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupFiveModal">
-                    Launch modal
-                </button>
-            </div>
-            </div>
+          </figure>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-            <img src="<?php echo esc_url( $group6['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-            <div class="card-body">
-                <h5 class="card-title"><?= $group6['featured_image_title'] ?></h5>
-                <p class="card-text"><?= $group6['featured_image_description'] ?></p>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupSixModal">
-                    Launch modal One
-                </button>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupSix_Modal">
-                    Launch modal Two
-                </button>
-            </div>
-            </div>
+        <div class="solution-content">
+          <h3><?= $group5['featured_image_title'] ?></h3>
+          <p><?= $group5['featured_image_description'] ?></p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupTwoModal">Learn more</button>
         </div>
-       </div>
+      </div>
 
-       
+      <div class="solution-item col-12 col-md-6 col-lg-4 mb-4">
+        <div class="solution-media">
+          <figure class="featured-image">
+            <img src="<?php echo esc_url( $group6['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+          </figure>
+        </div>
+        <div class="solution-content">
+          <h3><?= $group6['featured_image_title'] ?></h3>
+          <p><?= $group6['featured_image_description'] ?></p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#groupTwoModal">Learn more</button>
+        </div>
+      </div>
+
+    </div>
+      
 
     </div>
 </div>

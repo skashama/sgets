@@ -80,49 +80,79 @@ $headerImage = get_field('page_header');
     </div>
   </div>
 
-<div class="page-header" style="width: 100%;">
-    <img src="<?php echo esc_url( $headerImage['url'] ); ?>" class="img-fluid" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
+<div class="pages-header col-12 text-center p-4" style="width: 100%;">
+  <h3 class="mt-4"><?php the_field('page_title'); ?></h3>
 </div>
     
 <!-- <//?php echo var_dump($group1['featured_image']   ) ?> -->
 
 <div id="product">
     <div class="container">
-        <div class="page-title">
-            <h2><?php the_field('page_title'); ?></h2>
-            <hr>
-            <p><?php the_field('page_description') ?></p>
+        
+        <ul class="nav nav-pills nav-fill mb-5" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-lead-tab" data-toggle="pill" href="#pills-lead" role="tab" aria-controls="pills-lead" aria-selected="true">Lead Carbon Battery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-solar-tab" data-toggle="pill" href="#pills-solar" role="tab" aria-controls="pills-solar" aria-selected="false">Solar Panel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-transformer-tab" data-toggle="pill" href="#pills-transformer" role="tab" aria-controls="pills-transformer" aria-selected="false">Transformer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-inverter-tab" data-toggle="pill" href="#pills-inverter" role="tab" aria-controls="pills-inverter" aria-selected="false">Inverter</a>
+            </li>
+          </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-lead" role="tabpanel" aria-labelledby="pills-lead-tab">
+                <div class="row justify-content-center prod-group_one">
+                    <div class="col-md-4 col-6 align-self-center single-product">
+                        <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+                      </div>
+                      <div class="col-md-4 col-6 align-self-center single-product-description">              
+                        <h3><?= $group1['featured_image_title'] ?></h3>
+                        <p><?= $group1['feature_image_description'] ?></p>
+                        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#staticBackdrop">
+                            Launch modal
+                        </button>  
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="pills-solar" role="tabpanel" aria-labelledby="pills-solar-tab">
+                <div class="row justify-content-center prod-group_one">
+                    <div class="col-md-4 col-6 align-self-center single-product">
+                      <img src="<?php echo esc_url( $group2['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+                    </div>
+                    <div class="col-md-5 col-6 align-self-center single-product-description">
+                        <h3><?= $group2['featured_image_title'] ?></h3>
+                        <p><?= $group2['feature_image_description'] ?></p>                
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-transformer" role="tabpanel" aria-labelledby="pills-transformer-tab">
+                <div class="row justify-content-center prod-group_two">
+                    <div class="col-md-4 col-6 align-self-center single-product">
+                        <img src="<?php echo esc_url( $group3['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+                    </div>
+                    <div class="col-md-4 col-6 align-self-center single-product-description">
+                        <h3><?= $group3['featured_image_title'] ?></h3>
+                        <p><?= $group3['featured_image_description'] ?></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-inverter" role="tabpanel" aria-labelledby="pills-inverter-tab">
+                <div class="row justify-content-center prod-group_two">
+                    <div class="col-md-4 col-6 align-self-center single-product">
+                      <img src="<?php echo esc_url( $group4['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
+                    </div>
+                    <div class="col-md-4 col-6 align-self-center single-product-description">
+                      <h3><?= $group4['featured_image_title'] ?></h3>
+                      <p><?= $group4['featured_image_description'] ?></p>
+                    </div>
+                  </div>
+            </div>
         </div>
 
-        <div class="row prod-group_one">
-            <div class="col-xs-12 col-md-6 single-product">
-                <img src="<?php echo esc_url( $group1['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3><?= $group1['featured_image_title'] ?></h3>
-                <p><?= $group1['feature_image_description'] ?></p>
-            </div>
-            <div class="col-xs-12 col-md-6 single-product">
-                <img src="<?php echo esc_url( $group2['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3><?= $group2['featured_image_title'] ?></h3>
-                <p><?= $group2['feature_image_description'] ?></p>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#staticBackdrop">
-                    Launch modal
-                </button>                  
-            </div>
-
-        </div>
-
-        <div class="row prod-group_two">
-            <div class="col-xs-12 col-md-6 single-product">
-                <img src="<?php echo esc_url( $group3['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3><?= $group3['featured_image_title'] ?></h3>
-                <p><?= $group3['featured_image_description'] ?></p>
-            </div>
-            <div class="col-xs-12 col-md-6 single-product">
-                <img src="<?php echo esc_url( $group4['featured_image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['featured_image']['alt'] ); ?>" />
-                <h3><?= $group4['featured_image_title'] ?></h3>
-                <p><?= $group4['featured_image_description'] ?></p>
-            </div>
-        </div>
     </div>
 </div>
 <?

@@ -13,10 +13,10 @@ export default {
       dots: true,
       // infinite: true,
       speed: 1000,
-      // slidesToShow: 1,
+      slidesToShow: 1,
       // centerMode: true,
       // variableWidth: true,
-      autoplay: true,
+      // autoplay: true, 
       // responsive: true
     });
     // console.log('hello there'); 

@@ -10,32 +10,22 @@
 $headerImage = get_field('page_header');
 ?>
 
-<div class="contact-page_header" style="width: 100%;">
-    <div class="col-12 text-center p-4 contact-banner-text">
-        <p><?php the_field('contact_banner_text') ?></p>
-        <p class="justify-content-center"><?php the_field('contact_banner_text_2') ?></p>
-    </div> 
-    <div class="contact-banner-image"> 
-       <img src="<?php echo esc_url( $headerImage['url'] ); ?>" class="img-fluid" alt="<?php echo esc_attr( $headerImage['alt'] ); ?>" />
-    </div>
+<div class="pages-header col-12 text-center p-4" style="width: 100%;">
+  <h3 class="mt-4"><?php the_field('page_header_title'); ?></h3>
 </div>
 
 <div id="contact" class="text-center">
-        <div class="container">
-          <!-- <div class="col-md-8 col-md-offset-2 myContact-details"> -->
-            <div class="contact-title">
-              <h2><?php the_field('page_title'); ?></h2>
-              <hr>
+      <div class="container">          
+          <div class="form-intro">
+            <h5><?php the_field('page_content_title'); ?></h5>
+          </div>
+          <div class="row justify-content-center">
+            <div class="form-element">
+              <?php the_field('contact_form'); ?>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-md-4"><?php the_field('contact_infouno'); ?></div>
-              <div class="col-md-4"><?php the_field('contact_infotwo'); ?></div>
-              <div class="col-md-4"><?php the_field('contact_infothree'); ?></div> 
-              <div class="clearfix"></div>
-            </div>
-          <!-- </div> -->
-          
-        </div>
+            <div class="clearfix"></div>
+          </div>          
+      </div>
 </div>
 
 
